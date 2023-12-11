@@ -1,0 +1,82 @@
+.Section2 {
+	margin-bottom: 50px;
+}
+
+.Section2 .row {
+  justify-content: space-between;
+}
+
+.Section2 .row .col-3 {
+  box-shadow: 0px 6px 50px 5px rgba(5.91, 13.53, 25.5, 0.05);
+  border-radius: 10px;
+  text-align: center;
+  padding: 40px 0 0px 0;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.5s;
+  will-change: contents;
+}
+
+.Section2 .row .col-3:hover {
+	transition: all 0.5;
+	transform: scale(1.05);
+	color: #fff;
+}
+
+
+.Section2 .row .col-3 h2 {
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-weight: 500;
+	font-size: 25px;
+}
+
+.Section2 .row .col-3 p {
+	font-size: 14px;
+	font-weight: 400;
+	opacity: 0.8;
+	margin-bottom: 20px;	
+}
+
+.Section2 .row .col-6:last-child {
+	padding-bottom: 55px;
+	border-radius: 10px;
+	position: relative;
+	background-image: url(../../../img/Section2_card_bg.svg);
+	background-position-y: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: ease-in-out 0.2s;
+	will-change: contents;
+}
+
+
+.Section2 .col-3:hover .col-6:last-child {
+	background-position-y: 0;
+	color: #fff;
+	transition: ease-in-out 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+	.Section2 .row .col-3 {
+		transform: translateX(0) !important;
+		width: 49%;
+	}
+	.Section2 .row  {
+		flex-wrap: wrap;
+	}
+
+	.Section2_card-img{
+		width: 110px;
+	}
+
+	.Section2 .row .col-6:last-child{
+		background-position-y: 220px;
+	}
+
+	.Section2 .row .col-3{
+		margin-bottom: 10px;
+	}
+}

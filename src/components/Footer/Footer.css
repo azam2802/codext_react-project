@@ -1,0 +1,99 @@
+.Footer {
+  background-color: #051114;
+  padding: 100px 0 0 0;
+}
+
+.Footer .row {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Footer #Logo {
+  margin-bottom: 20px;
+}
+
+.Footer .socials{
+	display: flex;
+	gap: 20px;
+}
+
+.Footer .socials img {
+  width: 28px;
+  margin-top: 30px;
+}
+
+.Footer h3 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.Footer p {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.Footer .col-3 a {
+  display: block;
+  color: #fff;
+  opacity: 0.7;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.Footer .col-3 {
+  width: 23%;
+}
+
+.Footer .col-3:first-child {
+  width: 25%;
+}
+
+.Footer .col-3:last-child input {
+  margin-top: 20px;
+  background-color: transparent;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 0px 10px 10px;
+  width: 150px;
+}
+
+.Footer .col-3:last-child button {
+  border-radius: 0px 5px 5px 0px;
+  background: #42b4ee;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #42b4ee;
+}
+
+.Footer footer{
+	padding-bottom:80px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Footer h4:last-child{
+	font-size: 18px;
+font-style: normal;
+font-weight: 500;
+color: #fff;
+text-align: center;
+padding: 50px 0;
+opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer .row{
+    display: block;
+  }
+
+  .Footer .col-3{
+    width: 100% !important;
+  }
+
+  .Footer .col-3 h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}

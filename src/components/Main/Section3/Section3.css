@@ -1,0 +1,177 @@
+.Section3 .title {
+  text-align: center;
+  position: relative;
+}
+
+.Section3 .title h1 {
+  margin-bottom: 30px;
+}
+
+.Section3 .title h3 img {
+  vertical-align: middle;
+}
+
+.Section3 .title h3 img:last-child {
+  position: absolute;
+  left: 511px;
+  bottom: 5px;
+  transition: all 0.2s;
+}
+
+.prices {
+  margin-top: 60px;
+}
+
+.Section3 .row {
+  justify-content: space-between;
+}
+
+.Section3 .row .col-4-main {
+  display: flex;
+  box-shadow: 0px 6px 50px 5px rgba(5.91, 13.53, 25.5, 0.05);
+  border-radius: 10px;
+  flex-direction: column;
+  width: 32%;
+  padding: 0 0 50px 0;
+  text-align: center;
+  transition: 0.5s;
+  will-change: contents;
+  gap: 20px;
+}
+
+.Section3 .row .col-4-main .col-4 h4 {
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.Section3 .row .col-4-main .col-4 h1 {
+  font-size: 32px;
+  display: inline;
+  font-weight: 500;
+}
+
+.Section3 .price {
+  margin-bottom: 45px;
+}
+
+.Section3 .row .col-4-main .col-4 span {
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.Section3 .row .col-4-main .col-4 {
+  position: relative;
+  background-image: url(../../../img/Section3-card_bg.svg);
+  background-position-y: -270px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: ease-in-out 0.5s;
+}
+
+.Section3 .row .col-4-main:hover .col-4 {
+  color: #fff;
+  background-position-y: -40px;
+  transition: ease-in-out 0.5s;
+}
+
+.Section3 .row .col-4-main:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.Section3 .row .col-4-main .col-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.Section3 .row .col-4-main .col-8 p {
+  opacity: 0.7;
+}
+
+.Section3 .row .col-4-main .col-8 button {
+  margin-top: 40px;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #42b4ee;
+  font-weight: 500;
+  font-size: 16px;
+  transition: ease-in-out 0.3s;
+}
+
+.Section3 .row .col-4-main .col-8 button:hover {
+  background: #42b4ee;
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.Switcher {
+  display: inline-block;
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #42b4ee;
+  background: rgba(66, 180, 238, 0.2);
+  width: 83px;
+  height: 33px;
+  flex-shrink: 0;
+}
+
+.switch_btn {
+  width: 36px;
+  height: 23px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--Primary, #42b4ee);
+  left: 0;
+  transition: all 0.5s;
+}
+
+.Switcher {
+  display: inline-flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+	.Section3 .row{
+		flex-wrap: wrap;
+	}
+	.Section3 .row .col-4-main{
+		width: 100%;
+		transform: translateX(0) !important;
+    margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+  .Section3 .row .col-4-main:hover .col-4 {
+    background-position-y: -10px;
+    transition: ease-in-out 0.5s;
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .Section3 .row .col-4-main:hover .col-4 {
+    background-position-y: -15px;
+    transition: ease-in-out 0.5s;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Section3 .row .col-4-main:hover .col-4 {
+    background-position-y: 0px;
+    transition: ease-in-out 0.5s;
+  }
+}
+
+/* @media screen and (max-width: 1920px) {
+  .Section3 .row .col-4-main:hover .col-4 {
+    background-position-y: -50px;
+    transition: ease-in-out 0.5s;
+  } 
+ } */
